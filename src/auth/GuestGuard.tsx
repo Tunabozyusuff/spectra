@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { Navigate } from 'react-router-dom';
 import { useAuthContext } from './useAuthContext';
-import AuthLayout from '../Pages/layouts/AuthLayout';
+import AuthLayout from '../Pages/Layouts/AuthLayout';
 
 interface GuestGuardProps {
   children: ReactNode;

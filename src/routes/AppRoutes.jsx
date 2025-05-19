@@ -1,15 +1,12 @@
-import { ReactNode } from "react";
 import { Navigate } from "react-router-dom";
 
 import AuthGuard from "../auth/AuthGuard";
 import GuestGuard from "../auth/GuestGuard";
-
-import Login from "../pages/auth/Login";
-import Register from "../Pages/auth/Register";
+import Login from "../Pages/Auth/Login";
+import Register from "../Pages/Auth/Register";
 import Home from "../Pages/Home/Home";
 import MyList from "../Pages/MyList/MyList";
-
-import Layout from "../Pages/layouts/Layout";
+import Layout from "../Pages/Layouts/Layout";
 import Profile from "../components/profile/Profile";
 
 const routes = [

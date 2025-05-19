@@ -1,7 +1,7 @@
 import { useState, ReactNode } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import { useAuthContext } from './useAuthContext';
-import Login from '../pages/auth/Login';
+import Login from '../Pages/Auth/Login';
 
 interface AuthGuardProps {
     children: ReactNode;

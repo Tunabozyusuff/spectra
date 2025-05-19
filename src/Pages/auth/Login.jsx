@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../../auth/useAuthContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaSpinner } from "react-icons/fa";
 
 export default function Login() {
   const { login } = useAuthContext();
   const [loading, setLoading] = useState(false);
-  
+
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
