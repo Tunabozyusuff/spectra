@@ -8,10 +8,7 @@ import Login from "../pages/auth/Login";
 import Register from "../Pages/auth/Register";
 import Home from "../Pages/Home/Home";
 import MyList from "../Pages/MyList/MyList";
-import MovieDetail from "../Pages/MovieDetail/MovieDetail";
-
 import Layout from "../Pages/layouts/Layout";
-import AuthLayout from "../Pages/layouts/AuthLayout";
 import Profile from "../components/profile/Profile";
 
 export interface RouteItem {
