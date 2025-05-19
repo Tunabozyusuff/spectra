@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.App {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("/assets/login-bg.jpg");
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+/*  siyah yarı-saydam katman + blur  */
+.App::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top/right/bottom/left: 0 */
+  background: black;
+  /* %40 siyah */
+  opacity: 80%;
+  /* 10 px blur */
+  z-index: 0;
+  /* altında kalsın */
+  pointer-events: none;
+  /* tıklamayı engellemesin */
+}
+
+.App>*{
+  position: relative;
+  z-index: 1;
+}

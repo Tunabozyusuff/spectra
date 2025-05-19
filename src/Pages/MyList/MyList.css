@@ -1,0 +1,10 @@
+.my-list {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.my-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}

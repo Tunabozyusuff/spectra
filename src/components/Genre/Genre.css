@@ -1,0 +1,39 @@
+.genres {
+    height: auto;
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dedede;
+    font-weight: 400;
+    @apply overflow-y-hidden
+}
+
+.genres ul {
+    height: auto;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @apply overflow-x-auto overflow-y-hidden;
+}
+
+.genres ul li {
+    cursor: pointer;
+    font-size: 13px;
+    transition: all .3s;
+    @apply shrink-0
+}
+
+.genres ul li:hover {
+    color: #ffcc00;
+}
+
+.genres ul li.active {
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}

@@ -1,0 +1,19 @@
+.movie-list {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.movie-list ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.movies::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-list h1 {
+    color: #dedede;
+    margin-bottom: 15px;
+}
