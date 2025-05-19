@@ -8,17 +8,11 @@ import Login from "../pages/auth/Login";
 import Register from "../Pages/auth/Register";
 import Home from "../Pages/Home/Home";
 import MyList from "../Pages/MyList/MyList";
+
 import Layout from "../Pages/layouts/Layout";
 import Profile from "../components/profile/Profile";
 
-export interface RouteItem {
-  path?: string;
-  element?: ReactNode;
-  children?: RouteItem[];
-  index?: boolean;
-}
-
-const routes: RouteItem[] = [
+const routes = [
   {
     path: '/login',
     element: (
