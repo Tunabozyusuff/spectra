@@ -50,7 +50,6 @@ const routes: RouteItem[] = [
     children: [
       { index: true, element: <Home /> },
       { path: 'my-list', element: <MyList /> },
-      { path: ':id', element: <MovieDetail /> },
       { path: 'profile', element: <Profile /> },
     ],
   },
