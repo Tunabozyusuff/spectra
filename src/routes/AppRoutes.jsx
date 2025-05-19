@@ -2,12 +2,13 @@ import { Navigate } from "react-router-dom";
 
 import AuthGuard from "../auth/AuthGuard";
 import GuestGuard from "../auth/GuestGuard";
-import Login from "../Pages/Auth/Login";
-import Register from "../Pages/Auth/Register";
+import Profile from "../components/profile/Profile";
+
+import Login from "../Pages/auth/Login";
+import Register from "../Pages/auth/Register";
 import Home from "../Pages/Home/Home";
 import MyList from "../Pages/MyList/MyList";
-import Layout from "../Pages/Layouts/Layout";
-import Profile from "../components/profile/Profile";
+import Layout from "../Pages/layouts/Layout";
 
 const routes = [
   {
