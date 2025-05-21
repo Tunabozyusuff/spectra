@@ -1,11 +1,28 @@
-# React + Vite
+# 🎬 Spectra - TMDb Entegrasyonlu Film Öneri Platformu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Spectra**, TMDb API ile entegre çalışan, kullanıcıya özel film önerileri sunan modern bir web uygulamasıdır. Kullanıcılar sisteme kayıt olarak favori filmlerini listeleyebilir, içerik benzerliklerine göre önerilen filmleri keşfedebilir ve dinamik bir sinema deneyimi yaşayabilir.
 
-Currently, two official plugins are available:
+## 🚀 Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 Film arama & filtreleme (tür, yıl, popülerlik)
+- ❤️ Favori filmleri listeleme
+- 🤖 AI destekli içerik tabanlı film öneri sistemi
+- 🔐 Firebase Authentication ile güvenli giriş/kayıt
+- 📱 Mobil uyumlu, modern ve sezgisel arayüz
 
-node version = 22.11.0
-npm version  = 10.9.0
+## 🛠️ Kullanılan Teknolojiler
+
+- **React.js** – Bileşen tabanlı ön yüz geliştirme
+- **Vite** – Hızlı geliştirme ortamı
+- **Tailwind CSS** – Mobil uyumlu UI tasarımı
+- **Firebase Firestore** – NoSQL veritabanı
+- **Firebase Auth** – Kullanıcı kimlik doğrulama
+- **TMDb API** – Film verisi ve öneri servisi
+- **GitHub Actions** – CI/CD süreci
+- **Figma** – UI tasarım planlaması
+
+## ⚙️ Kurulum Adımları (İsteğe Bağlı)
+
+1. Bu repoyu klonlayın:
+   ```bash
+   git clone https://github.com/kullanici-adi/spectra.git
