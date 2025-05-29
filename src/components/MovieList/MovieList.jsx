@@ -20,7 +20,7 @@ const MovieList = ({ selectedGenre }) => {
     async function fetchData() {
         try {
             setLoading(true)
-            const response = await axios.get(`${API_POPULAR}?api_key=${API_KEY}&page=3`);
+            const response = await axios.get(`${API_POPULAR}?api_key=${API_KEY}&page=2`);
             setPopulars(response.data.results);
         } catch (error) {
             setLoading(false);

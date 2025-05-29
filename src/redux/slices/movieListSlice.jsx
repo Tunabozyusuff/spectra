@@ -12,7 +12,7 @@ const API_DISCOVER = 'https://api.themoviedb.org/3/discover/movie';
 // Ana (popüler) liste
 export const getMovieList = createAsyncThunk('movieList/get', async () => {
   const { data } = await axios.get(
-    `${API_POPULAR}?api_key=${API_KEY}&page=1`
+    `${API_POPULAR}?api_key=${API_KEY}&page=3`
   );
   return data.results;           // => film dizisi
 });
@@ -22,7 +22,7 @@ export const getMovieListByGenre = createAsyncThunk(
   'movieList/getByGenre',
   async (genreId) => {
     const { data } = await axios.get(
-      `${API_DISCOVER}?api_key=${API_KEY}&with_genres=${genreId}&page=1`
+      `${API_DISCOVER}?api_key=${API_KEY}&with_genres=${genreId}&page=4`
     );
     return data.results;         // => film dizisi
   }
@@ -117,9 +117,9 @@ const movieListSlice = createSlice({
 /* ------------------------------------------------------------------ */
 /*                            Selector’lar                            */
 /* ------------------------------------------------------------------ */
-export const selectMovieList   = (state) => state.movieList.movieList;
+export const selectMovieList = (state) => state.movieList.movieList;
 export const selectMovieStatus = (state) => state.movieList.status;
-export const selectIsSearch    = (state) => state.movieList.isSearch;
+export const selectIsSearch = (state) => state.movieList.isSearch;
 export const selectSearchQuery = (state) => state.movieList.searchQuery;
 
 /* ------------------------------------------------------------------ */
